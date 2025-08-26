@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Estilizada com Cores e Classes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .titulo {
+            background-color: yellow;
+            color: red;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid red;
+            text-align: center;
+        }
+
+        th {
+            background-color: brown;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ccffcc;
+        }
+
+        .destaque {
+            background-color: yellow;
+            font-weight: bold;
+            border: 5px dashed red;
+        }
+
+        .negrito {
+            font-weight: bold;
+        }
+
+        .italico {
+            font-style: italic;
+        }
+
+        .sublinhado {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+
+        ul {
+            margin-top: 15px;
+        }
+
+        li {
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="titulo">
+        Exercício 2: Tabela Estilizada com Cores e Classes
+    </div>
+
+    <h2>1. Monte e estilize a tabela</h2>
+    <p>
+        A tabela a seguir utiliza cabeçalho destacado, linhas alternadas e células com classe 
+        .destaque. Observe as bordas vermelhas e o colapso de bordas.
+    </p>
+
+    <table>
+        <tr>
+            <th>Produto</th>
+            <th>Categoria</th>
+            <th>Preço</th>
+            <th>Disponibilidade</th>
+        </tr>
+        <tr>
+            <td class="negrito">Mouse</td>
+            <td>Periféricos</td>
+            <td>R$ 80,00</td>
+            <td>Em estoque</td>
+        </tr>
+        <tr>
+            <td class="italico">Teclado</td>
+            <td>Periféricos</td>
+            <td class="destaque">R$ 120,00</td>
+            <td>Fora de estoque</td>
+        </tr>
+        <tr>
+            <td class="sublinhado">Monitor</td>
+            <td>Display</td>
+            <td>R$ 850,00</td>
+            <td>Em reposição</td>
+        </tr>
+        <tr>
+            <td>Headset</td>
+            <td>Áudio</td>
+            <td>R$ 210,00</td>
+            <td>Em estoque</td>
+        </tr>
+        
+        <tr>
+            <td class="negrito italico">Cadeira Gamer</td>
+            <td>Móveis</td>
+            <td>R$ 950,00</td>
+            <td>Em estoque</td>
+        </tr>
+        <tr>
+            <td class="sublinhado">Impressora</td>
+            <td>Escritório</td>
+            <td>R$ 600,00</td>
+            <td>Fora de estoque</td>
+        </tr>
+    </table>
+
+    
+        <p><strong>Tarefas:</strong></p>
+        <ul>
+            <li>Adicione duas novas linhas de produtos e aplique .negrito, .italico, .sublinhado conforme desejar.</li>
+            <li>Aplique a classe >.destaque em uma célula diferente e observe o efeito.</li>
+        </ul>
+    
+
+</body>
+</html>
